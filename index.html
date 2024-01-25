@@ -1,11 +1,61 @@
 <head>
-  <script type="text/javascript">
-    function onClick() {
-      let content = document.getElementById("2");
-      content.textContent += String(Date.now()) + "<br/>";
-    }
-  </script>
+  <link rel="stylesheet" href="index.css" />
 </head>
-<h1>index case matters</h1>
-<h2 id="2">what will be next?</h2>
-<button onclick="onClick()">Click ME</button>
+
+<div id="root">
+  <div id="leftPane">
+    <h1 class="highlight head">Arshad Syed</h1>
+    <span class="minordetails"
+      >Appllication Developer<br />Bengaluru, India</span
+    >
+    <hr />
+    <span class="contactCard">
+      <table>
+        <tbody>
+          <tr>
+            <td>Mobile</td>
+            <td>:</td>
+            <td>+91-9901030290</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>syarshad@outlook.com</td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>:</td>
+            <td>https://github.com/arshadsy</td>
+          </tr>
+          <tr>
+            <td>Linkedin</td>
+            <td>:</td>
+            <td>https://www.linkedin.com/in/arshad-syed</td>
+          </tr>
+        </tbody>
+      </table></span
+    >
+    <div class="card-sm">
+      <h4 class="head-sm">Education</h4>
+      MSc, Information Technology, Vellore Institute of Technologies, IN,
+      2018<br />
+      BCA, Computer Applications, Bangalore, IN, 2013
+    </div>
+    <div class="card-sm">
+      <h4 class="head-sm">Languages</h4>
+      English - Fluent<br />
+      Kannada - Good<br />
+      Hindi - Very Good<br />
+      Urdu - Good
+    </div>
+  </div>
+  <div class="rightPane">
+    <h2>Motivation</h2>
+    <p>
+      Software Developer with 9+ years of work experience looking for
+      opportunities in an organization that has passion to grow in harmony with
+      the ecosystem and the society to provide best products and services to our
+      customer.
+    </p>
+  </div>
+</div>
