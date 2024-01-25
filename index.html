@@ -2,10 +2,10 @@
   <script type="text/javascript">
     function onClick() {
       let content = document.getElementById("2");
-      content.textContent += str(new Date().now) + "<br/>";
+      content.textContent += String(Date.now()) + "<br/>";
     }
   </script>
 </head>
 <h1>index case matters</h1>
 <h2 id="2">what will be next?</h2>
-<button onclick="onClick">Click ME</button>
+<button onclick="onClick()">Click ME</button>
