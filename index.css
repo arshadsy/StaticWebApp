@@ -1,11 +1,22 @@
+:root{
+    --primclr: plum
+}
 #root{
-    display: flex;
+    background-image: linear-gradient(white, var(--primclr));
+    width: 100vw;
 }
 
+#root div{
+    align-content   : center;
+
+}
+.card{
+    padding-left: 1vw;
+    margin-top: 1rem;
+}
 .leftPane{
-    flex-grow: 20%;
-    flex-direction: column;
+    
 }
 .rightPane{
-    flex-grow: 80%;
-}
+    
+}   
