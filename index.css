@@ -2,14 +2,20 @@
     --primclr: plum
 }
 #root{
+
+}
+.bgImg{
     background-image: linear-gradient(white, var(--primclr));
     width: 100vw;
+    height: 100%;
+position: fixed;
+z-index: -1;
 }
 
-#root div{
-    align-content   : center;
-
+div{
+      /* align-content   : center; */
 }
+
 .card{
     padding-left: 1vw;
     margin-top: 1rem;
