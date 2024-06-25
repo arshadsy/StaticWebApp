@@ -1,0 +1,42 @@
+:root{
+    --primclr: plum
+}
+#root{
+}
+.bgImg{
+    background-image: linear-gradient(white, var(--primclr));
+    width: 100vw;
+    height: 100%;
+position: fixed;
+z-index: -1;
+}
+
+div{
+      /* align-content   : center; */
+      border-color: dimgrey;
+      border: 2px;
+}
+
+.app-topic-head{
+    width: fit-content;
+    text-decoration: underline darksalmon;
+    background-image: linear-gradient(to right,lightgrey,white);}
+.card-header{
+    background: #fff;
+}
+.card-vspace{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.leftPane{
+    
+}
+.rightPane{
+    
+}   
+.app-table-row-border tr {
+    border-bottom: black solid 1px;
+}
+.card th{
+    vertical-align: text-top    ;
+}
