@@ -1,18 +1,15 @@
 :root{
     --primclr: plum
 }
-#root{
-}
 .bgImg{
     background-image: linear-gradient(white, var(--primclr));
     width: 100vw;
     height: 100%;
-position: fixed;
-z-index: -1;
+    position: fixed;
+    z-index: -1;
 }
 
 div{
-      /* align-content   : center; */
       border-color: dimgrey;
       border: 2px;
 }
@@ -28,12 +25,6 @@ div{
     margin-top: 3px;
     margin-bottom: 3px;
 }
-.leftPane{
-    
-}
-.rightPane{
-    
-}   
 .app-table-row-border tr {
     border-bottom: black solid 1px;
 }
