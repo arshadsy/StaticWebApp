@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "index.html"
-      - "index.css"
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
