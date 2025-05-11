@@ -1,9 +1,5 @@
 export function ProjectProfile() {
-    return (
-        <div className="project-profile row m-4">
-            <div className="col-lg-2"></div>
-            <div className="col-lg-7 col-md-12">
-                <p className="card card-header app-topic-head fs-5">Project Profile</p>
+    return (<>
                 <ul className="list-group">
                     <li className="list-group-item card">
                         <h4
@@ -270,10 +266,7 @@ export function ProjectProfile() {
                         </table>
                     </li>
                 </ul>
-            </div>
-            <div className="col-lg-3"></div>
-
-        </div>
+</>
 
     )
 }

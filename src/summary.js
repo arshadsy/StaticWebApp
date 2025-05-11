@@ -1,9 +1,7 @@
+import { useState } from "react"
+
 export function Summary() {
-    return (
-        <div className="summary row m-4">
-            <div className="col-lg-2"></div>
-            <div className="col-md-12 col-lg-7">
-                <h3 className="card app-topic-head card-header fs-4">Summary</h3>
+    return (<>
                 <ul className="list-group">
                     <li className="list-group-item">
                         8 years of experience in C#, 2 years in .NET MVC 4 and 5, and 3 years
@@ -56,9 +54,6 @@ export function Summary() {
                         of Oracle PLSQL.
                     </li>
                 </ul>
-            </div>
-            <div className="col-lg-3"></div>
-        </div>
-
+</>
     );
 }
