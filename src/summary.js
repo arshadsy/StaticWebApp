@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export function Summary() {
     return (<>
                 <ul className="list-group">
