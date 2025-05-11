@@ -7,9 +7,8 @@ export function ContentLetter(){
   const showTab = ()=>{
 		switch(tabIndex){
 			case 0: return <Summary />
-				break;
 			case 1: return <ProjectProfile />
-			break;
+			default: return <></>
 		}
 	}
 	
