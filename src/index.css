@@ -16,7 +16,6 @@ div{
 
 .app-topic-head{
     width: fit-content;
-    text-decoration: underline darksalmon;
     background-image: linear-gradient(to right,lightgrey,white);}
 .card-header{
     background: #fff;
@@ -33,4 +32,11 @@ div{
 }
 .active-tab{
 	background: var(--primclr);
+}
+.nav-headers{
+	position: sticky;
+	top: 0;
+	padding: 10px 16px;
+	z-index:1;
+	background-image: linear-gradient(to bottom, white 85%, rgba(0,0,0,0))
 }
