@@ -3,9 +3,7 @@ import { Summary } from "./summary";
 import { useState, useEffect } from "react";
 
 export function ContentLetter() {
-  let targetId_s = "summary";
   const [activeBtn, setActiveBtn] = useState("summary");
-  const [visibleId, setVisibleId] = useState("project-profile");
   const handleScroll = (targetId) => {
     const target = document.getElementById(targetId);
     if (target) {
@@ -20,28 +18,36 @@ export function ContentLetter() {
       setActiveBtn(target);
     }
   };
-  const observerIDs = ["project-profile", "summary"];
   useEffect(() => {
-    const observers = [];
-    observerIDs.forEach((id) => {
-      const element = document.getElementById(id);
-      if (!element) return;
-      console.log("attaching", id);
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          console.log(entry);
-          if (entry.isIntersecting) {
-            setVisibleId(id);
-            console.log("id ", id);
-          }
-        },
-        { threshold: 0.7 },
-      );
-      observer.observe(element);
-      observers.push(observer);
+    const observerIDs = ["summary", "project-profile"];
+    const visibilityMap = new Map();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.id;
+          visibilityMap.set(id, entry.intersectionRatio);
+        });
+
+        const summaryView = visibilityMap.get("summary") || 0;
+        const profileView = visibilityMap.get("project-profile") || 0;
+        if (summaryView < 0.11 && profileView > 0) {
+          changeActiveBtn("project-profile");
+        }
+        if (summaryView > 0.12) {
+          setActiveBtn("summary");
+        }
+      },
+      { threshold: Array.from({ length: 101 }, (_, i) => i / 100) },
+    );
+    const elements = observerIDs
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    elements.forEach((el) => {
+      observer.observe(el);
     });
+
     return () => {
-      observers.forEach((ob) => ob.disconnect());
+      observer.disconnect();
     };
   }, []);
   return (
@@ -53,7 +59,7 @@ export function ContentLetter() {
             <button style={{ display: "contents" }}>
               {" "}
               <h3
-                className={`card app-topic-head card-header fs-4 me-1 ${visibleId === "summary" ? "active-tab" : ""}`}
+                className={`card app-topic-head card-header fs-4 me-1 ${activeBtn === "summary" ? "active-tab" : ""}`}
                 onClick={() => handleScroll("summary")}
               >
                 Summary
@@ -62,13 +68,12 @@ export function ContentLetter() {
             <button style={{ display: "contents" }}>
               {" "}
               <h3
-                className={`card app-topic-head card-header fs-4 ${visibleId !== "summary" ? "active-tab" : ""}`}
+                className={`card app-topic-head card-header fs-4 ${activeBtn !== "summary" ? "active-tab" : ""}`}
                 onClick={() => handleScroll("project-profile")}
               >
                 Professional History
               </h3>
             </button>
-            {visibleId}
           </div>
           <Summary />
           <ProjectProfile />
