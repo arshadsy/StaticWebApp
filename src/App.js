@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <div className="bgImg"></div>
-      <CoverLetter />
-      <ContentLetter />
+      <div className="px-4 pt-2">
+        <CoverLetter />
+        <ContentLetter />
+      </div>
     </div>
   );
 }

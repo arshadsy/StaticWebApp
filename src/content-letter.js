@@ -9,7 +9,7 @@ export function ContentLetter() {
     if (target) {
       let scrollPos =
         target.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo({ top: scrollPos, behavior: "smooth" });
+      window.scrollTo({ top: scrollPos, behavior: "instant" });
     }
     changeActiveBtn(targetId);
   };
@@ -52,32 +52,29 @@ export function ContentLetter() {
   }, []);
   return (
     <>
-      <div className="summary row m-4">
-        <div className="col-lg-2"></div>
-        <div className="col-md-12 col-lg-7">
-          <div className="d-flex nav-headers">
-            <button style={{ display: "contents" }}>
-              {" "}
-              <h3
-                className={`card app-topic-head card-header fs-4 me-1 ${activeBtn === "summary" ? "active-tab" : ""}`}
-                onClick={() => handleScroll("summary")}
-              >
-                Summary
-              </h3>
-            </button>
-            <button style={{ display: "contents" }}>
-              {" "}
-              <h3
-                className={`card app-topic-head card-header fs-4 ${activeBtn !== "summary" ? "active-tab" : ""}`}
-                onClick={() => handleScroll("project-profile")}
-              >
-                Professional History
-              </h3>
-            </button>
-          </div>
-          <Summary />
-          <ProjectProfile />
+      <div className="summary row">
+        <div className="d-flex nav-headers">
+          <button style={{ display: "contents" }}>
+            {" "}
+            <h3
+              className={`card app-topic-head card-header fs-4 me-1 ${activeBtn === "summary" ? "active-tab" : ""}`}
+              onClick={() => handleScroll("summary")}
+            >
+              Summary
+            </h3>
+          </button>
+          <button style={{ display: "contents" }}>
+            {" "}
+            <h3
+              className={`card app-topic-head card-header fs-4 ${activeBtn !== "summary" ? "active-tab" : ""}`}
+              onClick={() => handleScroll("project-profile")}
+            >
+              Professional History
+            </h3>
+          </button>
         </div>
+        <Summary />
+        <ProjectProfile />
       </div>
     </>
   );
