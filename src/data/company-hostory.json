@@ -1,3 +1,38 @@
 {
-
+  "experience": [
+    {
+      "role": "Application Developer",
+      "company": "IBM, India",
+      "duration": "Sep 2021 - Present",
+      "responsibilities": [
+        "Coordinating with Business Analysts to understand requirements",
+        "Designing and developing solutions for the given problem",
+        "Worked with sprint-based workflow",
+        "Technology stack: Dotnet Core, C#, React.js, SQL, Entity Framework, Node.js",
+        "Test Driven Development",
+        "Pair Programming"
+      ]
+    },
+    {
+      "role": "Senior Software Specialist",
+      "company": "Accenture Technologies, India",
+      "duration": "May 2019 - Sep 2021",
+      "responsibilities": [
+        "Designing, developing, and deploying .NET API and console applications",
+        "Worked with Docker and Kubernetes",
+        "Used Azure DevOps",
+        "Test Driven Development",
+        "Pair Programming"
+      ]
+    },
+    {
+      "role": "Senior Developer",
+      "company": "Wipro Limited, India",
+      "duration": "Mar 2014 - May 2019",
+      "responsibilities": [
+        "Monitoring and support activities in the early stages",
+        "Development of MVC applications in Ruby on Rails and ASP.NET"
+      ]
+    }
+  ]
 }
