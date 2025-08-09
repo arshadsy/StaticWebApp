@@ -1,5 +1,15 @@
 {
-  "experience": [
+  [
+	{
+		"role": "Senior Software Developer",
+		"company": "HGST",
+		"duration": "August 2024 - Present",
+		"responsibilities": [
+			"Work closely with stakeholders and Product Owners",
+			"Design solution and own end to end responsibility of deliverable product/product functionality",
+			"Provide guidance to team and peers to overcome challenges and meet the target deliverables",
+			"Technology stack: Node.js, next.js, React.js, React-native, MSSQL, MongoDB",
+		]
     {
       "role": "Application Developer",
       "company": "IBM, India",
