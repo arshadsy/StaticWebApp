@@ -1,3 +1,7 @@
+import data from "../src/data/company-hostory.json";
+
+data.workHistory.map((d) => console.log(d));
+
 export function CoverLetter() {
   return (
     <div className="row">

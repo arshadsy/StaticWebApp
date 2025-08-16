@@ -1,0 +1,122 @@
+{
+    "name": "Syed Arshad",
+    "experience": [
+        "8 years of experience in C#, 2 years in .NET MVC 4 and 5, and 3 years experience in WebApi",
+        "Worked with Front end Technologies like .net Blazor and reactJS",
+        "Experience in Dockers and Containerization",
+        "Experienced in Test Driven Development(TDD), Data Driven Development, Paired Programming.",
+        "Experience in Kubernetis deployment.",
+        "Possess working knowledge in C# Oops concept.",
+        "Understands threading concepts.",
+        "Understanding of Conventional and Attribute Based routing techniques.",
+        "Exposure to Code first development and Data First Develpoment.",
+        "Familiar with Entity Framework and LINQ and lambda expressions.",
+        "Exposure to Client Side scripts such as jQuery and JavaScript",
+        "Having 5 years of experience in Database Systems: MS Sql Server and Oracle.",
+        "Working knowledge on creation of database objects such as Tables, Views, Procedures, Functions and Oracle Packages.",
+        "Familiar with basic Query Optimizations.",
+        "Experienced in writing complex SQL queries.",
+        "Worked with Oracle collections objects and performance improvement of Oracle PLSQL."
+    ],
+    "companies": [
+        {
+            "name": "IBM",
+            "domain": "Manufacturing",
+            "technologies_involved": [
+                "dotnet Core",
+                "WebAPI",
+                "MVC",
+                "C#",
+                "SQL Server",
+                "Profisee Tool",
+                "ReactJS",
+                "Pair Programming",
+                "Sonar Cube",
+                "XUnit"
+            ],
+            "description": "The project is dedicated to providing automation solutions to its customers globally",
+            "role": "Senior Developer",
+            "minor_standard_tasks": "",
+            "team_size": 5,
+            "responsibilities": [
+                "As a senior developer, I am tasked with resolving production issues and ensure data integrity.",
+                "I am also responsible to analyze the existing code and optimize the structure to help improve performance and code reusability as well as maintainability.",
+                "Provide daily updates regarding the progress to my lead and Managers.",
+                "Test Driven Development, Pair Programming",
+                "Code deployment."
+            ]
+        },
+        {
+            "name": "Accenture",
+            "domain": "Integration Project/Data and Automation Tool",
+            "technologies_involved": [
+                "dotnet Core",
+                "MVC",
+                "WebAPI",
+                "ReactJS",
+                "MongoDB",
+                "Sql Server",
+                "Docker",
+                "Kubernetis"
+            ],
+            "description": "Integration Project is a proof of concept project developed for in-house usability, the objective is to provide the whole of Accenture internal projects with a centralized and robust system to perform routine tasks from one location",
+            "role": "Senior Developer",
+            "minor_standard_tasks": "",
+            "team_size": 17,
+            "responsibilities": [
+                "As a senior developer, I am tasked with analyzing requirements, designing a solution and implementing the solution.",
+                "I am also responsible to analyze the existing code and optimize the structure to help improve performance and code reusability as well as maintainability.",
+                "Provide daily updates regarding the progress to my lead and Managers.",
+                "Develop the solution and conduct Unit Testing.",
+                "Provide guidance to peers and new comers.",
+                "Code deployment in cases where deployment team is not available."
+            ]
+        },
+        {
+            "name": "Wipro",
+            "domain": "Employee Self Service Application - HRIT",
+            "technologies_involved": [
+                "PL/SQL",
+                "Oracle Web Forms(web package)",
+                "ASP.NET MVC5 (C#)"
+            ],
+            "description": "This project is about providing Technical and Functional solution to client regarding enhancements and applying fixes to the Application by working with various teams like Design, Architect and QA. and providing the correct resolution within SLA.",
+            "role": "Developer",
+            "minor_standard_tasks": "",
+            "team_size": 15
+        },
+        {
+            "name": "Wipro",
+            "domain": "Energy and Utilities",
+            "technologies_involved": [
+                "SQL Server",
+                "Ruby on Rails"
+            ],
+            "description": "An Energy and Utilities based project providing services in Australian market",
+            "roles": [
+                {
+                    "role": "Support and Maintainance L1:SQL Server",
+                    "minor_standard_tasks": [
+                        "As a developer, it is my responsibility that all tasks assigned to me transition through each stage of Development in a seamless manner and I am also responsible to monitor and facilitate other teams to test and deploy changes into Test and Production environments.",
+                        "Responsible for understanding customer requirements, analyzing possible solutions and discussing best approach which would enhance customer experience.",
+                        "Discuss the approach with Architect Team and Design Team.",
+                        "Develop the solution and conduct Unit Testing.",
+                        "Provide assistance to QA team.",
+                        "Interact with migrations teams.",
+                        "Follow through standard procedure wherever available when fixing minor data related ussies in Production Environment.",
+                        "In case standard procedure does not exist, analyze the task, document it and proceed to fix post approval of proposed standard work."
+                    ]
+                },
+                {
+                    "role": "Development L2: Ruby on Rails",
+                    "minor_standard_tasks": [
+                        "Create new subroutines to get customized reports based on client requirements through SSIS.",
+                        "Provide standard daily reports to client.",
+                        "Development and Maintenance of an In-house application the client uses to automate the Billing Process toward its vendors."
+                    ]
+                }
+            ],
+            "team_size": 2
+        }
+    ]
+}
